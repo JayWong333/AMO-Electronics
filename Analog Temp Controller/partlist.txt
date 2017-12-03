@@ -1,0 +1,12 @@
+Partlist
+
+Exported from ECDL_CUR_CTRL.brd at 9/26/2017 2:15 PM
+
+EAGLE Version 8.3.1 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value          Package            Library                                Position (mil)        Orientation
+
+C11      C_SNUB         C0603              rcl                                    (2050 530)            R270
+R9       R_SNUB         R0603              rcl                                    (2050 400)            R90
