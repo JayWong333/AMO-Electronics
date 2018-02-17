@@ -20127,6 +20127,27 @@ at 30/07/2012 12:23:11</description>
 <wire x1="93.98" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="DCLK" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="CLK"/>
+<wire x1="81.28" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="83.82" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DDATA" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="DATA"/>
+<wire x1="81.28" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
+<label x="83.82" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DCS" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="CS"/>
+<wire x1="81.28" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<label x="83.82" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -20864,21 +20885,21 @@ at 30/07/2012 12:23:11</description>
 <wire x1="68.58" y1="116.84" x2="20.32" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCK_DAC" class="0">
+<net name="DCLK" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="PA14(XIN/SER2:2+)"/>
 <wire x1="137.16" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
 <label x="139.7" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MOSI_DAC" class="0">
+<net name="DDATA" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="PA13(I2C/SER2:1+)"/>
 <wire x1="137.16" y1="139.7" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
 <label x="139.7" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CS_DAC" class="0">
+<net name="DCS" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="PA15(XOUT/SER2:3+)"/>
 <wire x1="137.16" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>

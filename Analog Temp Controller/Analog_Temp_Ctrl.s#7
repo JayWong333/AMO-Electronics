@@ -19165,11 +19165,7 @@ at 30/07/2012 12:23:11</description>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC3" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LMV358?*" device="MM" package3d_urn="urn:adsk.eagle:package:16453/1" technology="X"/>
-<part name="RX" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1"/>
-<part name="TX" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1"/>
 <part name="PWR" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1"/>
-<part name="R39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K"/>
-<part name="R40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K"/>
 <part name="R41" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K"/>
 <part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
@@ -20131,18 +20127,21 @@ at 30/07/2012 12:23:11</description>
 <segment>
 <pinref part="U3" gate="G$1" pin="CLK"/>
 <wire x1="81.28" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="83.82" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="DDATA" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="DATA"/>
 <wire x1="81.28" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
+<label x="83.82" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="DCS" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="CS"/>
 <wire x1="81.28" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<label x="83.82" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -20152,8 +20151,6 @@ at 30/07/2012 12:23:11</description>
 <text x="322.58" y="76.2" size="1.778" layer="97">RST</text>
 <text x="322.58" y="73.66" size="1.778" layer="97">TXD</text>
 <text x="322.58" y="71.12" size="1.778" layer="97">RXD</text>
-<text x="243.84" y="27.94" size="1.778" layer="97">RXLED</text>
-<text x="243.84" y="25.4" size="1.778" layer="97">TXLED</text>
 <text x="365.76" y="124.46" size="1.778" layer="97">+3V3</text>
 <text x="341.63" y="124.46" size="1.778" layer="97">+3V3</text>
 <text x="231.14" y="101.6" size="1.778" layer="91">UGBIN</text>
@@ -20164,17 +20161,7 @@ at 30/07/2012 12:23:11</description>
 <instance part="P+11" gate="1" x="320.04" y="71.12"/>
 <instance part="GND33" gate="1" x="320.04" y="63.5"/>
 <instance part="IC3" gate="B" x="248.92" y="99.06"/>
-<instance part="RX" gate="G$1" x="251.46" y="38.1"/>
-<instance part="TX" gate="G$1" x="266.7" y="38.1"/>
 <instance part="PWR" gate="G$1" x="281.94" y="38.1"/>
-<instance part="R39" gate="G$1" x="251.46" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="249.9614" y="41.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="255.524" y="41.656" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R40" gate="G$1" x="266.7" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="265.2014" y="41.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="270.764" y="41.656" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R41" gate="G$1" x="281.94" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="280.4414" y="41.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="286.004" y="41.656" size="1.778" layer="96" rot="R90"/>
@@ -20285,16 +20272,7 @@ at 30/07/2012 12:23:11</description>
 <segment>
 <pinref part="P+16" gate="1" pin="+5V"/>
 <pinref part="R41" gate="G$1" pin="2"/>
-<wire x1="281.94" y1="55.88" x2="281.94" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="53.34" x2="281.94" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="53.34" x2="266.7" y2="53.34" width="0.1524" layer="91"/>
-<junction x="281.94" y="53.34"/>
-<pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="266.7" y1="53.34" x2="266.7" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="53.34" x2="251.46" y2="53.34" width="0.1524" layer="91"/>
-<junction x="266.7" y="53.34"/>
-<pinref part="R39" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="53.34" x2="251.46" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="55.88" x2="281.94" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP10" gate="A" pin="1"/>
@@ -20426,36 +20404,10 @@ at 30/07/2012 12:23:11</description>
 <wire x1="353.06" y1="124.46" x2="345.44" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="RX" gate="G$1" pin="A"/>
-<pinref part="R39" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="TX" gate="G$1" pin="A"/>
-<pinref part="R40" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$49" class="0">
 <segment>
 <pinref part="PWR" gate="G$1" pin="A"/>
 <pinref part="R41" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="TXLED" class="0">
-<segment>
-<pinref part="TX" gate="G$1" pin="C"/>
-<wire x1="266.7" y1="33.02" x2="266.7" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="25.4" x2="243.84" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RXLED" class="0">
-<segment>
-<pinref part="RX" gate="G$1" pin="C"/>
-<wire x1="251.46" y1="33.02" x2="251.46" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="27.94" x2="243.84" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UGBOUT" class="0">
@@ -20882,21 +20834,21 @@ at 30/07/2012 12:23:11</description>
 <wire x1="68.58" y1="116.84" x2="20.32" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCK_DAC" class="0">
+<net name="DCLK" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="PA14(XIN/SER2:2+)"/>
 <wire x1="137.16" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
 <label x="139.7" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MOSI_DAC" class="0">
+<net name="DDATA" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="PA13(I2C/SER2:1+)"/>
 <wire x1="137.16" y1="139.7" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
 <label x="139.7" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CS_DAC" class="0">
+<net name="DCS" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="PA15(XOUT/SER2:3+)"/>
 <wire x1="137.16" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
