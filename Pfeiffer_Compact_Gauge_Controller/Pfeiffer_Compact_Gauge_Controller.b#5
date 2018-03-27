@@ -199,6 +199,7 @@ Readout Circuit</text>
 <wire x1="52" y1="0" x2="52" y2="59" width="0.05" layer="20"/>
 <wire x1="52" y1="59" x2="0" y2="59" width="0.05" layer="20"/>
 <wire x1="0" y1="59" x2="0" y2="0" width="0.05" layer="20"/>
+<text x="41.275" y="38.862" size="1.016" layer="48" font="vector">J1</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">

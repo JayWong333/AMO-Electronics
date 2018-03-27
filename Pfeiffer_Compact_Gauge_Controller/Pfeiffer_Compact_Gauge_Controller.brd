@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -200,6 +200,9 @@ Readout Circuit</text>
 <wire x1="52" y1="59" x2="0" y2="59" width="0.05" layer="20"/>
 <wire x1="0" y1="59" x2="0" y2="0" width="0.05" layer="20"/>
 <text x="43.053" y="43.561" size="1.016" layer="48" font="vector">J1</text>
+<dimension x1="48.006" y1="50.8" x2="48" y2="59" x3="71.99713125" y3="54.91755625" textsize="1.778" layer="1"/>
+<dimension x1="48.006" y1="50.8" x2="52.578" y2="40.64" x3="72" y3="45.72" textsize="1.778" layer="1" dtype="vertical"/>
+<dimension x1="52.578" y1="40.64" x2="43.18" y2="20.32" x3="72" y3="30.48" textsize="1.778" layer="1" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
